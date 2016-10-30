@@ -11,7 +11,7 @@
 
 以动词开头的方法命名,标识对象的行为
 
-```
+```objc
 - (void) selectTabViewItem:(NSTableViewItem *)tableViewItem
 ```
 
@@ -20,49 +20,49 @@
 * 如果方法返回方法接收者的某个属性,直接用属性名称命名。不要使用 get，除非是间接返回一个或多个值。请参考“访问方法”一节。
 
 推荐
-```
+```objc
 - (NSSize) cellSize;
 ```
 反对
-```
+```objc
 - (NSSize) getCellSize;
 ```
 * 参数要用描述该参数的关键字命名
 
 推荐
-```
+```objc
 - (void) sendAction:(SEL)aSelector to:(id)anObject forAllCells:(BOOL)flag;
 ```
 反对
-```
+```objc
 - (void) sendAction:(SEL)aSelector  :(id)anObject  :(BOOL)flag;
 ```
 
 * 参数前面的单词要能描述该参数。
 
 推荐
-```
+```objc
 - (id) viewWithTag:(int)aTag;
 ```
 反对
-```
+```objc
 - (id) taggedView:(int)aTag;
 ```
 
 * 细化基类中的已有方法:创建一个新方法,其名称是在被细化方法名称后面追加参数关键词
 
-```
+```objc
 - (id)initWithFrame:(CGRect)frameRect;//NSView, UIView.
 - (id)initWithFrame:(NSRect)frameRect mode:(int)aMode  cellClass:(Class)factoryId numberOfRows:(int)rowsHigh numberOfColumns (int)colsWide;//NSMatrix, a subclass of NSView
 ```
 * 不要使用 and 来连接用属性作参数的关键字
 
 推荐
-```
+```objc
 - (int)runModalForDirectory:(NSString *)path file:(NSString *)name types:(NSArray *)fileTypes;
 ```
 反对
-```
+```objc
 - (int)runModalForDirectory:(NSString *)path andFile:(NSString *)name andTypes:(NSArray *)fileTypes;
 ```
 
@@ -70,7 +70,7 @@
 
 * 如果方法描述两种独立的行为,使用 and 来串接它们
 
-```
+```objc
 - (BOOL) openFile:(NSString *)fullPath withApplication:(NSString NSWorkspace *)appName andDeactivate:(BOOL)flag;//NSWorkspace.
 ```
 
@@ -79,53 +79,53 @@
 
 * 如果属性是用名词描述的,则命名格式为:
 
-```
+```objc
 - (void) setNoun:(type)aNoun;
 - (type) noun;
 ```
 例如:
 
-```
+```objc
 - (void) setgColor:(NSColor *)aColor;
 - (NSColor *) color;
 ```
 
 * 如果属性是用形容词描述的,则命名格式为:
 
-```
+```objc
 - (void) setAdjective:(BOOL)flag;
 - (BOOL) isAdjective;
 ```
 
 例如:
 
-```
+```objc
 - (void) setEditable:(BOOL)flag;
 - (BOOL) isEditable;
 ```
 
 * 如果属性是用动词描述的,则命名格式为:(动词要用现在时时态)
 
-```
+```objc
 - (void) setVerbObject:(BOOL)flag;
 - (BOOL) verbObject;
 ```
 
 例如:
 
-```
+```objc
 - (void) setShowAlpha:(BOOL)flag;
 - (BOOL) showsAlpha;
 ```
 * 不要使用动词的过去分词形式作形容词使用
 
 推荐
-```
+```objc
 - (void)setAcceptsGlyphInfo:(BOOL)flag;
 - (BOOL)acceptsGlyphInfo;                
 ```
 反对
-```
+```objc
 - (void)setGlyphInfoAccepted:(BOOL)flag;
 - (BOOL)glyphInfoAccepted;               
 ```
@@ -134,18 +134,18 @@
 
 推荐
 
-```
+```objc
 - (void) setCanHide:(BOOL)flag;             
 - (BOOL) canHide;                          
 ```
 反对
-```
+```objc
 - (void) setDoseAcceptGlyphInfo:(BOOL)flag;
 - (BOOL) doseAcceptGlyphInfo;               
 ```
 * 只有在方法需要间接返回多个值的情况下,才使用 get
 
-```
+```objc
 - (void) getLineDash:(float *)pattern count:(int *)count phase:(float *)phase;  //NSBezierPath
 ```
 像上面这样的方法,在其实现里应允许接受 NULL 作为其 in/out 参数,以表示调用者对一个或多个返回 值不感兴趣。
@@ -156,33 +156,33 @@
 
 * 名称以标示发送消息的对象的类名开头,省略类名的前缀并小写类第一个字符
 
-```
+```objc
 - (BOOL) tableView:(NSTableView *)tableView shouldSelectRow:(int)row;
 - (BOOL)application:(NSApplication *)sender openFile:(NSString *)filename;
 ```
 
 * 冒号紧跟在类名之后(随后的那个参数表示委派的对象)。该规则不适用于只有一个 sender 参数的方法
 
-```
+```objc
 - (BOOL) applicationOpenUntitledFile:(NSApplication *)sender;
 ```
 
 * 上面的那条规则也不适用于响应通知的方法。在这种情况下,方法的唯一参数表示通知对象
 
-```
+```objc
 - (void) windowDidChangeScreen:(NSNotification *)notification;
 ```
 
 * 用于通知委托对象操作即将发生或已经发生的方法名中要使用 did 或 will
 
-```
+```objc
 - (void) browserDidScroll:(NSBrowser *)sender;
 - (NSUndoManager *) windowWillReturnUndoManager:(NSWindow *)window;
 ```
 
 * 用于询问委托对象可否执行某操作的方法名中可使用 did 或 will,但最好使用 should
 
-```
+```objc
 - (BOOL) windowShouldClose:(id)sender;
 ```
 
@@ -190,14 +190,14 @@
 
 管理对象(集合中的对象被称之为元素)的集合类,约定要具备如下形式的方法:
 
-```
+```objc
 - (void) addElement:(elementType)adObj;
 - (void) removeElement:(elementType)anObj;
 - (NSArray *)elements;
 ```
 例如:
 
-```
+```objc
 - (void) addLayoutManager:(NSLayoutManager *)adObj;
 - (void) removeLayoutManager:(NSLayoutManager *)anObj;
 - (NSArray *)layoutManagers;
@@ -208,7 +208,7 @@
 * 如果集合中的元素无序,返回 NSSet,而不是 NSArray
 * 如果将元素插入指定位置的功能很重要,则需具备如下方法:
 
-```
+```objc
 - (void) insertElement:(elementType)anObj atIndex:(int)index;
 - (void) removeElementAtIndex:(int)index;
 ```
@@ -217,7 +217,7 @@
 * 以上集合类方法通常负责管理元素的所有者关系,在 add 或 insert 的实现代码里会 retain 元素,在 remove 的实现代码中会 release 元素
 * 当被插入的对象需要持有指向集合对象的指针时,通常使用 set... 来命名其设置该指针的方法,且不 要 retain 集合对象。比如上面的 insertLayerManager:atIndex: 这种情形,NSLayoutManager 类使 用如下方法:
 
-```
+```objc
 - (void) setTextStorage:(NSTextStorage *)textStorage;
 - (NSTextStorage *)textStorage;
 ```
@@ -225,7 +225,7 @@
 
 另一个关于集合约定的例子来自 NSWindow 类:
 
-```
+```objc
 - (void) addChildWindow:(NSWindow *)childWin ordered:(NSWindowOrderingMode)place;
 - (void) removeChildWindow:(NSWindow *)childWin;
 - (NSArray *)childWindows;
@@ -243,7 +243,7 @@
 
 按照 Cocoa 惯例,以下关键字与参数联合使用:
 
-```
+```objc
 ...action:(SEL)aSelector
 ..alignment:(int)mode
 ...atIndex:(int)index
