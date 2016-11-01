@@ -12,8 +12,8 @@
 
 #### CocoaPods 的安装
 * sudo gem install cocoapods
-  * ** 注意：苹果系统升级 OS X EL Capitan 后改为：
- sudo gem install -n /usr/local/bin cocoapods (v1.0.0) **
+  * **注意：苹果系统升级 OS X EL Capitan 后改为：
+ sudo gem install -n /usr/local/bin cocoapods (v1.0.0)**
 * pod setup(//将 CocoaPods Specs repository复制到你电脑上~/.cocoapods目录下)
 * sudo gem update --system
 * 新建工程，并在终端中cd到工程文件夹内
