@@ -84,37 +84,37 @@ $ git rm [--cached]　-->> 删除，加--cached表示仅从index file中删除�
 $ git mv <src> <dest>　-->> 移动/更名
 $ git diff --cached/--staged　-->> 当前索引与上次提交（有哪些需要commit）
 $ git diff　-->> 当前索引与工作目录（有哪些需要add）
-git diff HEAD[^]　-->> 工作目录与上次提交（当前目录与上次提交有何改变）
-git commit [-a] -m <msg>　-->> 提交
-git commit --amend [-m <msg>]　-->> 修复上次提交
-git reset HEAD <file>　-->> 同--mixed，default option
-git reset --mixed HEAD　-->> 撤销 commit 和index file,只保留 working tree 的信息
-git reset --hard HEAD[^]　-->> 将 working tree 和 index file 都撤销到以前状态
-git reset --soft HEAD[^]　-->> 只撤销 commit,而保留 working tree 和 index file 的信息回复到某个状态。以git reset --soft HEAD为例，commit回退到HEAD（相当于无变化），若是HEAD^，则commit回退到HEAD^
-git gc　-->> 用垃圾回收机制清除由于 reset 而造成的垃圾代码
-git status　-->> 显示当前工作目录状态
-git log [-p]　-->> 显示提交历史（many useful options to be learned）
-git branch [branch]　-->> 显示/新建分支
-git branch -d/-D　-->> 删除分支（d表示“在分支合并后删除分支”，D表示无论如何都删除分支）
-git show-branch
-git checkout <branch>　-->> 切换分支（分支未commit无法切换）
-git merge <branch>　-->> 合并分支
-git merge == git pull .
-git show <branch | commit | tag | etc>　-->> 显示对应对象的信息
-git grep <rep> [object]　-->>（在指定对象（历史记录）中）搜索　　　　　　　　
-git cat-file　-->> 查看数据
-git cat-file <-t | -s | -e | -p | (type)> <object>　-->> type can be one of: blob, tree, commit, tag
-git ls-files [--stage]　-->> show information about files in the index and the working tree（实际是查看索引文件）
-git watchchanged <since>..<until>　-->> 显示两个commit（当然也可以是branch）的区别
-git remote [-v]　-->> 显示远程仓库，加-v选项可显示仓库地址
-git remote add <repo_name> <url>　-->> 添加远程仓库，repo_name为shortname，指代仓库地址
-git remote rename <old_name> <new_name>　-->> 更名
-git remote rm <repo_name>　-->> 删除远程仓库
-git remote show <repo_name>　-->> 查看远程仓库信息
-git remote fetch <repo_name>　-->> 从远程仓库抓取数据（并不合并）
-git pull <repo_name> <branch_name>　-->> 拉去数据并合并到当前分支
-git push <repo_name> <branch_name>　-->> 推送指定分支到指定仓库
-git fetch <repo_name> <branch_name>[:<local_branch_name>]　-->> 拉去数据，未合并
+$ git diff HEAD[^]　-->> 工作目录与上次提交（当前目录与上次提交有何改变）
+$ git commit [-a] -m <msg>　-->> 提交
+$ git commit --amend [-m <msg>]　-->> 修复上次提交
+$ git reset HEAD <file>　-->> 同--mixed，default option
+$ git reset --mixed HEAD　-->> 撤销 commit 和index file,只保留 working tree 的信息
+$ git reset --hard HEAD[^]　-->> 将 working tree 和 index file 都撤销到以前状态
+$ git reset --soft HEAD[^]　-->> 只撤销 commit,而保留 working tree 和 index file 的信息回复到某个状态。以git reset --soft HEAD为例，commit回退到HEAD（相当于无变化），若是HEAD^，则commit回退到HEAD^
+$ git gc　-->> 用垃圾回收机制清除由于 reset 而造成的垃圾代码
+$ git status　-->> 显示当前工作目录状态
+$ git log [-p]　-->> 显示提交历史（many useful options to be learned）
+$ git branch [branch]　-->> 显示/新建分支
+$ git branch -d/-D　-->> 删除分支（d表示“在分支合并后删除分支”，D表示无论如何都删除分支）
+$ git show-branch
+$ git checkout <branch>　-->> 切换分支（分支未commit无法切换）
+$ git merge <branch>　-->> 合并分支
+$ git merge == git pull .
+$ git show <branch | commit | tag | etc>　-->> 显示对应对象的信息
+$ git grep <rep> [object]　-->>（在指定对象（历史记录）中）搜索　　　　　　　　
+$ git cat-file　-->> 查看数据
+$ git cat-file <-t | -s | -e | -p | (type)> <object>　-->> type can be one of: blob, tree, commit, tag
+$ git ls-files [--stage]　-->> show information about files in the index and the working tree（实际是查看索引文件）
+$ git watchchanged <since>..<until>　-->> 显示两个commit（当然也可以是branch）的区别
+$ git remote [-v]　-->> 显示远程仓库，加-v选项可显示仓库地址
+$ git remote add <repo_name> <url>　-->> 添加远程仓库，repo_name为shortname，指代仓库地址
+$ git remote rename <old_name> <new_name>　-->> 更名
+$ git remote rm <repo_name>　-->> 删除远程仓库
+$ git remote show <repo_name>　-->> 查看远程仓库信息
+$ git remote fetch <repo_name>　-->> 从远程仓库抓取数据（并不合并）
+$ git pull <repo_name> <branch_name>　-->> 拉去数据并合并到当前分支
+$ git push <repo_name> <branch_name>　-->> 推送指定分支到指定仓库
+$ git fetch <repo_name> <branch_name>[:<local_branch_name>]　-->> 拉去数据，未合并
 ```
 Git 相关环境变量
 ```git
