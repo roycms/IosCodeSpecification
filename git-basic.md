@@ -115,6 +115,7 @@ $ git remote fetch <repo_name>　-->> 从远程仓库抓取数据（并不合并
 $ git pull <repo_name> <branch_name>　-->> 拉去数据并合并到当前分支
 $ git push <repo_name> <branch_name>　-->> 推送指定分支到指定仓库
 $ git fetch <repo_name> <branch_name>[:<local_branch_name>]　-->> 拉去数据，未合并
+$ git push --force <repo_name> <branch_name>　-->> 强制推送指定分支到指定仓库
 ```
 Git 相关环境变量
 ```git
