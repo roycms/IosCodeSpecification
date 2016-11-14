@@ -28,6 +28,9 @@ static CGFloat const XYZFooFloatConstant = 1234.5;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 
+#pragma mark - prepareData 准备数据
+- (void)prepareData;
+
 #pragma mark - Layout UI准备和布局相关
 - (void)prepareUI;
 - (void)makeViewConstraints;
