@@ -1,7 +1,7 @@
 ## 代码结构
 
 Pragma marks 是给方法分组很好的方法，特别是在 view controller 中。下面是一个在 view controller 中常见的结构
-```oc
+```objc
 #import "SomeModel.h"
 #import "SomeView.h"
 #import "SomeController.h"
