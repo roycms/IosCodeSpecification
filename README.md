@@ -1,3 +1,6 @@
+ ![Logo](https://github.com/roycms/IosCodeSpecification/blob/master/logo.png)
+===
+
 # 关于
 开发一旦涉及到多人协作，我们通常会制定一些规范（也可叫做基于团队的风格和偏好）不管是口头的还是文档形式的还是公司层面的或者是团队层面的，
 面对这些规范或风格往往会收到很多的吐槽：
