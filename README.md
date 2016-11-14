@@ -14,19 +14,20 @@
  ......
 
 此时我们意识到这个团队是多麽的迫切的需要有一个规范（也可叫做基于团队的风格和偏好）去引导团队按照统一的风格进行编码，团队的新成员加入时你就要给他准备一份这样的手册。
+
 刚好我这里有一份这样的手册，在我工作之余搜集整理的一些适合与自己团队开发的一些规范，分享这些规范，希望这些规范也能为你的团队带来帮助，如果你有新的建议也希望能够 @我 或者pull request.
 
-# 目录
+# 手册目录
 
 * [介绍](#introduce.md)
 * [前言](why.md)
-* 命名规范
+* IOS规范
     * [Xcode 工程规范](xcode-project.md)
     * [方法命名推荐](naming-methods.md)
     * [Objective-C 语法规范指南](objective-c-style-guide.md)
     * [代码结构规范](code-structure.md)
     * [代码注释规范](code-comments.md)
-* 代码版本控制
+* 工具相关
     * [Git基本使用](git-basic.md)
     * [CocoasPod安装基本使用](cocoasPod-basic.md)
 * [附录一 Xcode插件](Xcode_Plugins.md)
