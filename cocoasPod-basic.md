@@ -25,3 +25,6 @@
 * 注意：请忽略升级CocoaPods的spec仓库
 * pod install --verbose --no-repo-update
 * pod update --verbose --no-repo-update
+
+## 将代码提交到CocoaPods
+ >http://www.cnblogs.com/wengzilin/p/4742530.html
