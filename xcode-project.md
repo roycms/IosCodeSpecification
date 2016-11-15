@@ -13,7 +13,7 @@ projectName/
            ├─ html               
            ├─ css               
            ├─ js               
-         ├─ projec           
+         ├─ Documents           
            ├─ module1               功能模块1
              ├─ model               模型
              ├─ Controllers         控制器
@@ -32,7 +32,11 @@ projectName/
 方案二
 ```
 projectName/
-         ├─ Resources               文件等素材
+          ├─ Resources               文件等素材 (注:app内推荐采用Assets资源管理)
+           ├─ images               
+           ├─ html               
+           ├─ css               
+           ├─ js          
          ├─ Models                  模型
             ├─ module1              功能模块1
             ├─ module2              功能模块2
