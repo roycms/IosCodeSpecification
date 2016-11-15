@@ -45,7 +45,8 @@ color.diff=auto
 ```
 ## .gitignore 文件针对oc的忽律配置
 
-> 引用自 https://github.com/github/gitignore
+>当把项目放入版本控制系统的时候，首先应该有一个好的 .gitignore 文件。这样，不必要的文件（用户设置，临时文件这些）都不会放进你的仓库里面。幸运的是，Github 已经给了我们 [Objective-C](https://github.com/github/gitignore/blob/master/Objective-C.gitignore) 和 [Swift](https://github.com/github/gitignore/blob/master/Swift.gitignore) 语言的模板 
+引用自 https://github.com/github/gitignore
 
 ```git
 ##系统
