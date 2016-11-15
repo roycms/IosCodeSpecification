@@ -481,19 +481,6 @@ if (isAwesome == YES) // 永远别这么做
 [Import_1]: http://ashfurrow.com/blog/structuring-modern-objective-c
 [Import_2]: http://clang.llvm.org/docs/Modules.html#using-modules
 
-## Xcode 工程
-
-为了避免文件杂乱，物理文件应该保持和 Xcode 项目文件同步。Xcode 创建的任何组（group）都必须在文件系统有相应的映射。为了更清晰，代码不仅应该按照类型进行分组，也可以根据功能进行分组。
-
-
-如果可以的话，尽可能一直打开 target Build Settings 中 "Treat Warnings as Errors" 以及一些[额外的警告][Xcode-project_1]。如果你需要忽略指定的警告,使用 [Clang 的编译特性][Xcode-project_2] 。
-
-
-[Xcode-project_1]:http://boredzo.org/blog/archives/2009-11-07/warnings
-
-[Xcode-project_2]:http://clang.llvm.org/docs/UsersManual.html#controlling-diagnostics-via-pragmas
-
-
 
 # 其他 Objective-C 风格指南
 
