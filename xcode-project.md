@@ -115,10 +115,10 @@ IconCheckmarkHighlighted@2x~ipad.png // iPad, Retina
 
 * 应该让你的 app 向一个服务发送崩溃日志。你可以手动实现，通过 PLCrashReporter 以及你自己的后端。但是强烈推荐你使用现有的服务，比如下面的
 ```
-Crashlytics
-HockeyApp
-Crittercism
-Splunk MINTexpress
+[Crashlytics](http://www.crashlytics.com/)
+[HockeyApp](http://hockeyapp.net/)
+[Crittercism](https://www.crittercism.com/)
+[Splunk MINTexpress](https://mint.splunk.com/)
 ```
 当你配置好后，确保你 保存了 the Xcode archive (.xcarchive) 对于每一个 app 放出的版本。
 
