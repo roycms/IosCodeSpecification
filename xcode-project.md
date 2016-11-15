@@ -121,4 +121,5 @@ Crittercism
 Splunk MINTexpress
 ```
 当你配置好后，确保你 保存了 the Xcode archive (.xcarchive) 对于每一个 app 放出的版本。
+
 这个 归档中包含了构建的app的二进制以及调试符号(dSYM)，你需要用每个版本特定的app把你的 Crash 报告符号化。
