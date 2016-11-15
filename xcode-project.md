@@ -29,21 +29,21 @@ projectName/
 方案二
 ```
 projectName/
-         ├─ Resources            文件等素材
-         ├─ Models               模型
-            ├─ module1           功能模块1
-            ├─ module2           功能模块2
-         ├─ Views                视图
-            ├─ module1           功能模块1
-            ├─ module2           功能模块2
-         ├─ Controllers          控制器
-            ├─ module1           功能模块1
-            ├─ module2           功能模块2
-         ├─ Helpers              工具类
-         ├─ Net                  网络请求
-         ├─ Config               项目配置为文件
-         ├─ Catergory            自定义扩展类
-         ├─ Manager              管理类
+         ├─ Resources               文件等素材
+         ├─ Models                  模型
+            ├─ module1              功能模块1
+            ├─ module2              功能模块2
+         ├─ Views                   视图
+            ├─ module1              功能模块1
+            ├─ module2              功能模块2
+         ├─ Controllers             控制器
+            ├─ module1              功能模块1
+            ├─ module2              功能模块2
+         ├─ Helpers                 工具类
+         ├─ Net                     网络请求
+         ├─ Config                  项目配置为文件
+         ├─ Catergory               自定义扩展类
+         ├─ Manager                 管理类
          
 
 ```
