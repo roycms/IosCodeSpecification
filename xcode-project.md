@@ -1,13 +1,5 @@
 # Xcode 工程规范
 
-
-
-
-
-
-
-
-
 ## 目录结构参考
 * 为了避免文件杂乱，物理文件应该保持和 Xcode 项目文件同步。
 * Xcode 创建的任何组（group）都必须在文件系统有相应的映射。
@@ -79,3 +71,14 @@ IconCheckmarkHighlighted@2x~ipad.png // iPad, Retina
 ## 使用向量图
 
 * 你可以用设计师原始的 vector graphics (PDFs) 加入到 asset catalogs，Xcode可以自动地根据它们生成位图。这减少了你的工程的复杂性（管理更少的文件）。
+
+## 调试
+* 当你的 App 崩溃的时候，Xcode 不会默认进入到调试器里面。
+* 为了调试，你需要增加一个异常断点（在 Xcode 的 Debug 导航中点 “+”），来在异常发生的时候退出执行。在很多情况下，你需要看看触发这些异常的代码。
+* 它会捕捉任何异常，即使是已经处理的。如果 Xcode 在 一个第三方库里面中断执行，比如，你可能需要通过选择 Edit Breakpoint 并且设置 Exception 为 Objective-C.。
+* 对于视图 debug， Reveal 和 Spark Inspector 这两个强有力的可视化检查工具可以帮你省下很多时间，特别是在你使用 Auto Layout 并且希望定位出问题或者溢出屏幕的视图的时候。Xcode 提供了免费的类似功能 ，但是只能适用于 iOS 8+ 并且不那么好用。
+
+## 分析
+* Xcode 有一个叫 Instruments 的分析工具，它包括了许多分析内存，CPU，网络通讯，图形以及更多的工具，它有点复杂的，但是它的追踪内存泄漏的时候还是蛮直观的。
+* 只需要在 Xcode 中 选择 Product > Profile，选择 Allocations， 点击 Record 按钮并且用一些有用的字符串过滤申请空间的信息，比如你自己的app的类名。* 它会在固定的列中统计，并且告诉你每个对象有多少实例。到底是什么类一直增加实例导致内存泄漏。
+* Instruments 也有自动化的工具来进行录制并且运行UI交互以及JavaScript文件。. UI Auto Monkey 是一个自动化随机点击、滑动以及旋转你的app的脚本，他在压力、渗透测试中很有用。
