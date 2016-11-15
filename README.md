@@ -1,5 +1,6 @@
  ![Logo](https://roycms.github.io/IosCodeSpecification/logo.png)
 # Ios Code Specification
+* 我们面对 "别人" 的代码总是相互吐槽，互相"伤害"，一脸的无奈表情就像上面的🍅 tomato.
 * 开发一旦涉及到多人协作，我们通常会制定一些规范（也可叫做基于团队的风格和偏好）不管是口头的还是文档形式的还是公司层面的或者是团队层面的，
 面对这些规范或风格往往会收到很多的吐槽.
 * 你不妨看看 [[来自Google的原文是出自MarkCC的吐槽]](why.md) 进一步了解规范的必要性.
