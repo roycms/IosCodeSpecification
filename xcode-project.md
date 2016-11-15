@@ -4,6 +4,28 @@
 * 为了避免文件杂乱，物理文件应该保持和 Xcode 项目文件同步。
 * Xcode 创建的任何组（group）都必须在文件系统有相应的映射。
 * 为了更清晰，代码不仅应该按照类型进行分组，也可以根据功能进行分组。
+方案一
+```
+projectName/
+         ├─ Resources               文件等素材
+         ├─ projec           
+           ├─ module1               功能模块1
+             ├─ model               模型
+             ├─ Controllers         控制器
+             ├─ Views               视图
+           ├─ module2               功能模块2
+             ├─ model               模型
+             ├─ Controllers         控制器
+             ├─ Views               视图
+         ├─ Helpers                 工具类
+         ├─ Net                     网络请求
+         ├─ Config                  项目配置为文件
+         ├─ Catergory               自定义扩展类
+         ├─ Manager                 管理类
+         
+
+```
+方案一
 ```
 projectName/
          ├─ Resources            文件等素材
