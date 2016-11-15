@@ -23,8 +23,7 @@ projectName/
          ├─ Config                  项目配置为文件
          ├─ Catergory               自定义扩展类
          ├─ Manager                 管理类
-         
-
+         ├─ ThirdLibraries          第三方库       
 ```
 方案二
 ```
@@ -44,8 +43,7 @@ projectName/
          ├─ Config                  项目配置为文件
          ├─ Catergory               自定义扩展类
          ├─ Manager                 管理类
-         
-
+         ├─ ThirdLibraries          第三方库
 ```
 
 ## 编译警告
