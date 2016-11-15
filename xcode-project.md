@@ -20,6 +20,8 @@ projectName/
          ├─ Net                  网络请求
          ├─ Config               项目配置为文件
          ├─ Catergory            自定义扩展类
+         ├─ Manager              管理类
+         
 
 ```
 
