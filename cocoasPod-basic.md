@@ -18,16 +18,6 @@
 * pod setup(//将 CocoaPods Specs repository复制到你电脑上~/.cocoapods目录下)
 * sudo gem update --system
 
-
-* pod search 第三方
-* 新建文件：vim Podfile
-* 编辑文件：platform:ios, '6.0'   
- pod 'AFNetworking', '~> 2.3.1'    <-------第三方
-* 导入第三方库：$pod install（更新太慢）
-* 注意：请忽略升级CocoaPods的spec仓库
-* pod install --verbose --no-repo-update
-* pod update --verbose --no-repo-update
-
 ### CocoaPods 的使用
 * 如果你计划增加外部依赖(比如，第三方库)在你的项目中，CocoaPods 提供了一个快捷的途径.
 * 新建工程，并在终端中cd到工程文件夹内,在你的 iOS 项目目录下运行：
