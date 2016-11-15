@@ -81,4 +81,16 @@ IconCheckmarkHighlighted@2x~ipad.png // iPad, Retina
 ## 分析
 * Xcode 有一个叫 Instruments 的分析工具，它包括了许多分析内存，CPU，网络通讯，图形以及更多的工具，它有点复杂的，但是它的追踪内存泄漏的时候还是蛮直观的。
 * 只需要在 Xcode 中 选择 Product > Profile，选择 Allocations， 点击 Record 按钮并且用一些有用的字符串过滤申请空间的信息，比如你自己的app的类名。* 它会在固定的列中统计，并且告诉你每个对象有多少实例。到底是什么类一直增加实例导致内存泄漏。
-* Instruments 也有自动化的工具来进行录制并且运行UI交互以及JavaScript文件。. UI Auto Monkey 是一个自动化随机点击、滑动以及旋转你的app的脚本，他在压力、渗透测试中很有用。
+* Instruments 也有自动化的工具来进行录制并且运行UI交互以及JavaScript文件。
+* . UI Auto Monkey 是一个自动化随机点击、滑动以及旋转你的app的脚本，他在压力、渗透测试中很有用。
+
+## Crash Logs 崩溃日志
+
+* 应该让你的 app 向一个服务发送崩溃日志。你可以手动实现，通过 PLCrashReporter 以及你自己的后端。但是强烈推荐你使用现有的服务，比如下面的
+```
+Crashlytics
+HockeyApp
+Crittercism
+Splunk MINTexpress
+```
+当你配置好后，确保你 保存了 the Xcode archive (.xcarchive) 对于每一个 app 放出的版本。这个 归档中包含了构建的app的二进制以及调试符号(dSYM)，你需要用每个版本特定的app把你的 Crash 报告符号化。
