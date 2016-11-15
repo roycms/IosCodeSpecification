@@ -149,4 +149,5 @@ COMMIT_EDITMSG: 最后一次 commit 时的提交信息。
 * [git挑战赛游戏GO] (http://learngitbranching.js.org/)
 
 ## 分享一个图谱
+点击放大了看 👀
  ![git 图谱](https://roycms.github.io/IosCodeSpecification/git.png)
