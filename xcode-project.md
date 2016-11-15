@@ -6,19 +6,21 @@
 * 为了更清晰，代码不仅应该按照类型进行分组，也可以根据功能进行分组。
 ```
 projectName/
-    Resources                   图片等素材
-    Sources                     代码
-        /ViewController         控制器
-        /Service                一些第三方比如支付宝，提供给controller的封装好的接口
-        /External               引入的第三方库
-        /Net                    网络请求
-        /Model                  模型
-        /Util                   工具类
-        /Custom                 自定义的文件
-            /Catergory          自定义的扩展类
-            /Config             项目配置文件
-            /View               视图
-            /Util               工具类
+         ├─ Resources            文件等素材
+         ├─ Models               模型
+            ├─ module1           功能模块1
+            ├─ module2           功能模块2
+         ├─ Views                视图
+            ├─ module1           功能模块1
+            ├─ module2           功能模块2
+         ├─ Controllers          控制器
+            ├─ module1           功能模块1
+            ├─ module2           功能模块2
+         ├─ Helpers              工具类
+         ├─ Net                  网络请求
+         ├─ Config               项目配置为文件
+         ├─ Catergory            自定义扩展类
+
 ```
 
 ## 编译警告
