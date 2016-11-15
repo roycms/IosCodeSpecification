@@ -6,11 +6,7 @@
 
 
 
-如果可以的话，尽可能一直打开 target Build Settings 中 "Treat Warnings as Errors" 以及一些[额外的警告][Xcode-project_1]。如果你需要忽略指定的警告,使用 [Clang 的编译特性][Xcode-project_2] 。
 
-
-[Xcode-project_1]:http://boredzo.org/blog/archives/2009-11-07/warnings
-[Xcode-project_2]:http://clang.llvm.org/docs/UsersManual.html#controlling-diagnostics-via-pragmas
 
 ## 目录结构参考
 * 为了避免文件杂乱，物理文件应该保持和 Xcode 项目文件同步。
@@ -34,8 +30,10 @@ projectName/
 ```
 
 ## 编译警告
-* 推荐你尽可能多打开编译警告，并且像对待错误一样对待编译警告。推荐 这个PPT。
-* 这个幻灯片覆盖了如何在特定文件，或者特别代码段里面消除相关警告的内容。
+* 如果可以的话，尽可能一直打开 target Build Settings 中 "Treat Warnings as Errors" 以及一些[额外的警告][Xcode-project_1]。
+* 如果你需要忽略指定的警告,使用 [Clang 的编译特性][Xcode-project_2] 。
+[Xcode-project_1]:http://boredzo.org/blog/archives/2009-11-07/warnings
+[Xcode-project_2]:http://clang.llvm.org/docs/UsersManual.html#controlling-diagnostics-via-pragmas
 简单的来说，至少需要在 _“Other Warning Flags” 编译设置里面定义下面的值：
 ```
 -Wall _(增加很多的警告)_
