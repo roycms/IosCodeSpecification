@@ -114,12 +114,12 @@ IconCheckmarkHighlighted@2x~ipad.png // iPad, Retina
 ## Crash Logs 崩溃日志
 
 * 应该让你的 app 向一个服务发送崩溃日志。你可以手动实现，通过 PLCrashReporter 以及你自己的后端。但是强烈推荐你使用现有的服务，比如下面的
-```
-[Crashlytics](http://www.crashlytics.com/)
-[HockeyApp](http://hockeyapp.net/)
-[Crittercism](https://www.crittercism.com/)
-[Splunk MINTexpress](https://mint.splunk.com/)
-```
+
+* [Crashlytics](http://www.crashlytics.com/)
+* [HockeyApp](http://hockeyapp.net/)
+* [Crittercism](https://www.crittercism.com/)
+* [Splunk MINTexpress](https://mint.splunk.com/)
+
 当你配置好后，确保你 保存了 the Xcode archive (.xcarchive) 对于每一个 app 放出的版本。
 
 这个 归档中包含了构建的app的二进制以及调试符号(dSYM)，你需要用每个版本特定的app把你的 Crash 报告符号化。
