@@ -144,6 +144,29 @@ HEAD^2: 表示 HEAD 的第二个父母的信息
 COMMIT_EDITMSG: 最后一次 commit 时的提交信息。
 ```
 
+## 设置git快捷命令
+* .gitconfig的位置： $HOME目录
+```
+cd $HOME
+vi .gitconfig
+```
+.gitconfig内容 比较常用的
+```
+    st = status -s
+    cl = clone
+    ci = commit
+    cm = commit -m
+    cma = commit -a -m
+    ca = commit --amend
+    amend = commit --amend
+    caa = commit -a --amend -C HEAD
+    filelog = log -u
+    fl = log -u
+    ai = add --interactive
+    co = checkout
+    br = branch
+```
+
 ## 已经熟悉了 git 
 * 如果您已经熟悉了git的所有命令 就来测试一下你的水平吧，或者挑战一下：
 * [git挑战赛游戏GO] (http://learngitbranching.js.org/)
