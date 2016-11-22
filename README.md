@@ -16,6 +16,8 @@
     * [Objective-C 语法规范指南](objective-c-style-guide.md)
     * [代码结构规范](code-structure.md)
     * [代码注释规范](code-comments.md)
+    * [切图命名规范](naming-cutImage.md)
+
 * 工具相关
     * [Git基本使用](git-basic.md)
     * [CocoasPod安装基本使用](cocoasPod-basic.md)
