@@ -1,4 +1,7 @@
 # 图片命名规则
+
+>引用自简书 offspring  http://www.jianshu.com/p/2896b2823b65
+
 为了降低设计和开发之间的交流成本，所以在此确定一下 iOS 项目切图的命名标准。
 
 我们的命名规则的基本思想是把文件名分成三部分，第一部分是图片的逻辑归属分类，第二部分是图片的表现内容，第三部分是图片的内容的类型，有些图片还会有第四部分，表示图片表现的状态。首先有几个规则是：
@@ -8,7 +11,7 @@
 图片名中两倍图在名字最后要加@2x，三倍图在名字最后要加@3x
 ## 逻辑分类
 逻辑分类即是这张图片所属的分组，在 iOS 中大多的项目是以 Tab bar 的形式进行逻辑上的分组，以下图为例：
-
+ ![cup_image.png](https://roycms.github.io/IosCodeSpecification/cup_image.png)
 这张图中的 Showtime 客户端就是使用 Tab bar 进行分组的，可以看出内容分成了五个部分：Home，Categories，Live TV，My List 和 Search。所以例如在这个界面中，右上角的设置按钮，那么它的切图命名的 第一部分就是 Home。
 
 但是仔细看看上面这个界面的话有一些图其实是不属于某个分类的，比如 Tab bar 中的图标文件和 Navigation Bar 中的 Showtime 图标，对于这两种内容来讲，它们命名的规范是第一部分显示的是 navigationbar 或者是 tabbar。
