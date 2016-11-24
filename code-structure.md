@@ -48,10 +48,6 @@ static CGFloat const XYZFooFloatConstant = 1234.5;
 #pragma mark - Internal Helpers 内部公用方法
 - (NSString *)displayNameForFoo:(Foo *)foo;
 
-#pragma mark - Lazy loading UI控件懒加载
-- (void)prepareUI;
-- (void)makeViewConstraints;
-
 @end
 
 ```
