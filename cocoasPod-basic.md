@@ -39,6 +39,10 @@ pod update
 ```
 会升级所有的 pod 到最新版本，你可以用大量 符号 来定义你期望的版本需求。
 
+关于 Podfile.lock
+
+当你执行pod install之后，除了 Podfile 外，CocoaPods 还会生成一个名为Podfile.lock的文件，Podfile.lock 应该加入到版本控制里面，不应该把这个文件加入到.gitignore中。因为Podfile.lock会锁定当前各依赖库的版本，之后如果多次执行pod install 不会更改版本，要pod update才会改Podfile.lock了。这样多人协作的时候，可以防止第三方库升级时造成大家各自的第三方库版本不一致。
+
 ## 将代码提交到CocoaPods
 *如果你在github共享了一段代码，你想把代码提交到CocoaPods，希望其他用户search 你的项目的名称就可以找到你，并且 pod install 集成你的代码到项目内，你就需要学会怎样将自己的代码先提交给 CocoaPods servers.
  >http://www.cnblogs.com/wengzilin/p/4742530.html
