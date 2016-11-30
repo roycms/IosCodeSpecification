@@ -26,7 +26,7 @@ pen source 规范
 * 如何在Github上创建项目 http://www.jianshu.com/p/efa9dfce2853
 * 如何在Github上给别人的项目贡献代码 http://www.jianshu.com/p/00cf29d2d66c
 * 怎样使用Markdown编写文档 http://wowubuntu.com/markdown/index.html
-* 怎样将代码提交到cocoapod
+* 怎样将代码提交到cocoapod https://github.com/roycms/IosCodeSpecification/blob/master/cocoasPod-basic.md
 
 ## open source 宗旨
 
