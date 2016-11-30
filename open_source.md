@@ -18,6 +18,8 @@ pen source 规范
 4. 指引团队把握最新前言的技术更新反馈
  等.....
 
+ 国内知名公司的 github地址 https://github.com/roycms/IosCodeSpecification/blob/master/github_url.md
+
 ## open source 操作方法
 > 了解下列这些知识之后就基本可以顺利的将代码开源分享出去，或者为开源贡献一份力量了。
 
