@@ -1,5 +1,5 @@
 
-pen source 规范
+# pen source 规范
 
 > 该文档根据团队的发展持续维护更新。
 
