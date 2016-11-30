@@ -3,7 +3,7 @@
 
 > [部分翻译引用自 awesome-ios](https://github.com/vsouza/awesome-ios#testing)  awesome IOS 针对不同的功能用途做了归类并标注了是否支持swift.
 
-[一些知名公司的github地址](github_url.md)
+> [一些知名公司的github地址](github_url.md)
 
 * [ReactiveCocoa 基于响应式编程思想的oc](https://github.com/ReactiveCocoa/ReactiveCocoa)
 * [MBProgressHUD hud提示框](https://github.com/jdg/MBProgressHUD)
