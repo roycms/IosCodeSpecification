@@ -14,8 +14,8 @@ pen source 规范
 直接的受益：    
 1. 分享过程中对自身代码提炼优化和总结   
 2. 接受使用者的一线反馈，更容易发现潜在的问题   
-3. 接受一些列规范审核测试   
-4. 指引团队把握最新前言的技术更新反馈 
+3. 接受一系列规范审核测试    
+4. 指引团队把握最新前沿的技术和更新反馈 
  等.....
 
  国内知名公司的 github地址 https://github.com/roycms/IosCodeSpecification/blob/master/github_url.md
