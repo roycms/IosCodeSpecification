@@ -58,6 +58,11 @@ projectName/
          ├─ ThirdLibraries          第三方库
 ```
 
+ ![projectSpecification](https://roycms.github.io/IosCodeSpecification/project Specification/projectSpecification.jpg)
+
+
+ ![mvcProject](https://roycms.github.io/IosCodeSpecification/project Specification/mvcProject.png)
+
 ## 编译警告
 * 如果可以的话，尽可能一直打开 target Build Settings 中 "Treat Warnings as Errors" 以及一些[额外的警告][Xcode-project_1]。
 * 如果你需要忽略指定的警告,使用 [Clang 的编译特性][Xcode-project_2] 。
