@@ -18,10 +18,14 @@ projectName/
              ├─ model               模型
              ├─ Controllers         控制器
              ├─ Views               视图
-           ├─ module2               功能模块2
+             ├─ Utility             工具类
+             ├─ NetWork             网络请求
+           ├─ module2               功能模块2
              ├─ model               模型
              ├─ Controllers         控制器
              ├─ Views               视图
+             ├─ Utility             工具类
+             ├─ NetWork             网络请求
          ├─ Helpers                 工具类
          ├─ Net                     网络请求
          ├─ Config                  项目配置为文件
