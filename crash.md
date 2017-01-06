@@ -34,4 +34,4 @@ export DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer"
 ```
 ## 第四步 
 
-* 再次执行4，会得到一个Control_symbol.crash 文件，此文件为crash 日志文件，可查看详细的崩溃信息
+* 再次执行第三步，会得到一个Control_symbol.crash 文件，此文件为crash 日志文件，可查看详细的崩溃信息
