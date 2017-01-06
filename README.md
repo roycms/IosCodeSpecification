@@ -22,7 +22,8 @@
 * 工具相关
     * [Git基本使用](git-basic.md)   
     * [CocoasPod安装基本使用](cocoasPod-basic.md)   
-    * [webP格式](webP.md)   
+    * [webP格式](webP.md)
+    * [JSPatch 热更新](http://jspatch.com/Docs/intro)   
 * [附录一 Xcode插件](xcode-plugins.md)
 * [附录二 常用第三方开源库](library.md)
 * [附录二 知名企业github地址](github_url.md)
