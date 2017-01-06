@@ -18,14 +18,18 @@ find /Applications/Xcode.app -name symbolicatecrash -type f
 
 ## 第三步 
 * 执行（注意路径要根据自己mac 的情况进行修改，文件名字也要修改）
+```
 ./symbolicatecrash /Users/xxx/Desktop/crash/IXQ-2017-01-05-170207.crash /Users/xxx/Desktop/crash/IXQ.app.dSYM > Control_symbol.crash
+```
 
-* 如果命令执行后报错   
+* 如果命令执行后报错 
+```
 Error: "DEVELOPER_DIR" is not defined at /usr/local/bin/symbolicatecrash line 53
-
-* 执行以下命令：   
+```
+* 执行以下命令： 
+```
 export DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer"
-
+```
 ## 第四步 
 
 * 再次执行4，会得到一个Control_symbol.crash 文件，此文件为crash 日志文件，可查看详细的崩溃信息
