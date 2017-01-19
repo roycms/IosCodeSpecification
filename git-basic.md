@@ -174,3 +174,10 @@ vi .gitconfig
 ## 分享一个图谱
 点击放大了看 👀
  ![git 图谱](https://roycms.github.io/IosCodeSpecification/git.png)
+
+
+
+## 如何在Github上给别人的仓库贡献代码
+
+- [贡献代码](http://www.jianshu.com/p/00cf29d2d66c)
+
