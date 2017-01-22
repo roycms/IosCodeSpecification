@@ -1,4 +1,5 @@
 # readme文件的书写规范
+> https://github.com/repat/README-template 
 
 # Product Name
 > Short blurb about what your product does.
@@ -9,7 +10,7 @@
 
 One to two paragraph statement about your product and what it does.
 
-![](header.png)
+![](readme-template.png)
 
 ## Installation
 
