@@ -29,6 +29,7 @@
 * 如何在Github上给别人的项目贡献代码 http://www.jianshu.com/p/00cf29d2d66c
 * 怎样使用Markdown编写文档 http://wowubuntu.com/markdown/index.html
 * 怎样将代码提交到cocoapod https://github.com/roycms/IosCodeSpecification/blob/master/cocoasPod-basic.md
+* readme文件书写规范 https://github.com/roycms/IosCodeSpecification/blob/master/readme-template.md
 
 ## open source 宗旨
 
