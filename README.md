@@ -26,5 +26,6 @@
     * [JSPatch 热更新](http://jspatch.com/Docs/intro)   
 * [附录一 Xcode插件](xcode-plugins.md)
 * [附录二 常用第三方开源库](library.md)
+* [附录二 github开源贡献知识](open_source.md)
 * [附录二 知名企业github地址](github_url.md)
 * [参考](reference.md)
