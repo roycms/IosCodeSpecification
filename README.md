@@ -11,8 +11,8 @@
 
 * [前言](why.md)
 * IOS规范
-    * [Xcode 工程规范](xcode-project.md)
-    * [Xcode 快捷键](xcodeShortcuts.md)
+    * [Xcode 工程规范](xcode-project.md)     
+    * [Xcode 快捷键](xcodeShortcuts.md)  
     * [方法命名推荐](naming-methods.md)
     * [Objective-C 语法规范指南](objective-c-style-guide.md)
     * [代码结构规范](code-structure.md)
